@@ -39,8 +39,8 @@ name = "ui"
 required-features = ["render"]
 
 [dependencies]
-bevy = { version = "0.13", default-features = false, features = ["bevy_asset"] }
-egui = { version = "0.27", default-features = false, features = ["bytemuck"] }
+bevy = { version = "0.13.1", default-features = false, features = ["bevy_asset"] }
+egui = { git = "https://github.com/alexparlett/egui.git", ref = "c7d3f2cb7a7917325ce7ef922a2eacac99fc0dce", default-features = false, features = ["bytemuck"] }
 webbrowser = { version = "0.8.2", optional = true }
 
 [target.'cfg(not(any(target_arch = "wasm32", target_os = "android")))'.dependencies]
