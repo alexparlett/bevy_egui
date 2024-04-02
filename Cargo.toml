@@ -40,7 +40,7 @@ required-features = ["render"]
 
 [dependencies]
 bevy = { version = "0.13.1", default-features = false, features = ["bevy_asset"] }
-egui = { version = "0.27.1", git = "https://github.com/emilk/egui", rev = "4bc7e6624507347fff453972f171ff4ec049f215", default-features = false, features = ["bytemuck"] }
+egui = { version = "0.27.1", git = "https://github.com/emilk/egui", rev = "36ebce163a74af40f6216cba2d68aa4c728443eb", default-features = false, features = ["bytemuck"] }
 webbrowser = { version = "0.8.2", optional = true }
 
 [target.'cfg(not(any(target_arch = "wasm32", target_os = "android")))'.dependencies]
